@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Test_Matriz</title>
+
+  <link rel="stylesheet" href="./rdoc.css" type="text/css" media="screen" />
+
+  <script src="./js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="./index.html">Home</a>
+          <a href="./index.html#classes">Classes</a>
+          <a href="./index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="./test/tc_matriz_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="test/tc_matriz.rb">test/tc_matriz.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Test::Unit::TestCase</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-i-setup">#setup</a></li>
+          
+          <li><a href="#method-i-teardown">#teardown</a></li>
+          
+          <li><a href="#method-i-test_datacheck">#test_datacheck</a></li>
+          
+          <li><a href="#method-i-test_operations">#test_operations</a></li>
+          
+          <li><a href="#method-i-test_typecheck">#test_typecheck</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+      <div id="fileindex-section" class="section project-section">
+        <h3 class="section-header">Files</h3>
+        <ul>
+        
+          <li class="file"><a href="./Gemfile.html">Gemfile</a></li>
+        
+          <li class="file"><a href="./Guardfile.html">Guardfile</a></li>
+        
+          <li class="file"><a href="./LICENSE.html">LICENSE</a></li>
+        
+          <li class="file"><a href="./Rakefile.html">Rakefile</a></li>
+        
+          <li class="file"><a href="./Rakefile~.html">Rakefile~</a></li>
+        
+        </ul>
+      </div>
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="./images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="./Matriz.html">Matriz</a></li>
+        
+          <li><a href="./Matriz_densa.html">Matriz_densa</a></li>
+        
+          <li><a href="./Matriz_dispersa.html">Matriz_dispersa</a></li>
+        
+          <li><a href="./NumerosRacionales.html">NumerosRacionales</a></li>
+        
+          <li><a href="./Object.html">Object</a></li>
+        
+          <li><a href="./Test_Matriz.html">Test_Matriz</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Test_Matriz</h1>
+
+    <div id="description" class="description">
+      
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+
+      <!-- Methods -->
+      
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="setup-method" class="method-detail ">
+          <a name="method-i-setup"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">setup</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="setup-source">
+<pre>
+<span class="ruby-comment"># File test/tc_matriz.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">setup</span>
+  <span class="ruby-ivar">@m1</span>=<span class="ruby-constant">Matriz_densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@m1</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-value">1</span>,<span class="ruby-value">2</span>],[<span class="ruby-value">2</span>,<span class="ruby-value">3</span>]])
+  <span class="ruby-ivar">@m2</span>=<span class="ruby-constant">Matriz_densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@m2</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>),<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>)],[<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>),<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>)]])
+  <span class="ruby-ivar">@m3</span>=<span class="ruby-constant">Matriz_dispersa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@m3</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-value">0</span>,<span class="ruby-value">1</span>]],[<span class="ruby-value">-1</span>])
+  <span class="ruby-ivar">@m4</span>=<span class="ruby-constant">Matriz_dispersa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@m4</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>]],[<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">2</span>)])
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- setup-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- setup-method -->
+
+      
+        <div id="teardown-method" class="method-detail ">
+          <a name="method-i-teardown"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">teardown</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="teardown-source">
+<pre>
+<span class="ruby-comment"># File test/tc_matriz.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">teardown</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- teardown-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- teardown-method -->
+
+      
+        <div id="test_datacheck-method" class="method-detail ">
+          <a name="method-i-test_datacheck"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">test_datacheck</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="test_datacheck-source">
+<pre>
+<span class="ruby-comment"># File test/tc_matriz.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_datacheck</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m1</span>.<span class="ruby-identifier">fil</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m1</span>.<span class="ruby-identifier">col</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m3</span>.<span class="ruby-identifier">fil</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m3</span>.<span class="ruby-identifier">col</span>,<span class="ruby-value">2</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- test_datacheck-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- test_datacheck-method -->
+
+      
+        <div id="test_operations-method" class="method-detail ">
+          <a name="method-i-test_operations"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">test_operations</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="test_operations-source">
+<pre>
+<span class="ruby-comment"># File test/tc_matriz.rb, line 36</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_operations</span>
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m2</span>.<span class="ruby-identifier">max</span>,<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m2</span>.<span class="ruby-identifier">min</span>,<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">1</span>, <span class="ruby-value">1</span>))
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m3</span>.<span class="ruby-identifier">max</span>,<span class="ruby-value">0</span>)
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@m3</span>.<span class="ruby-identifier">min</span>,<span class="ruby-value">-1</span>)
+  <span class="ruby-ivar">@mr</span>=<span class="ruby-constant">Matriz_densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">2</span>)
+  <span class="ruby-ivar">@mr</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-value">1</span>,<span class="ruby-value">1</span>],[<span class="ruby-value">2</span>,<span class="ruby-value">3</span>]])
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@mr</span>,<span class="ruby-ivar">@m1</span><span class="ruby-operator">+</span><span class="ruby-ivar">@m3</span>)
+  <span class="ruby-ivar">@mr</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-value">1</span>,<span class="ruby-value">3</span>],[<span class="ruby-value">2</span>,<span class="ruby-value">3</span>]])
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@mr</span>,<span class="ruby-ivar">@m1</span><span class="ruby-operator">-</span><span class="ruby-ivar">@m3</span>)
+  <span class="ruby-ivar">@mr</span>.<span class="ruby-identifier">llenar</span>([[<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>, <span class="ruby-value">1</span>),<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>, <span class="ruby-value">1</span>)],[<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>, <span class="ruby-value">1</span>),<span class="ruby-constant">NumerosRacionales</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">3</span>, <span class="ruby-value">1</span>)]])
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-ivar">@mr</span>,(<span class="ruby-ivar">@m2</span>*<span class="ruby-value">3</span>))
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- test_operations-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- test_operations-method -->
+
+      
+        <div id="test_typecheck-method" class="method-detail ">
+          <a name="method-i-test_typecheck"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">test_typecheck</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="test_typecheck-source">
+<pre>
+<span class="ruby-comment"># File test/tc_matriz.rb, line 22</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">test_typecheck</span>        <span class="ruby-comment">#En caso de que las dimensiones sean negativas</span>
+  <span class="ruby-identifier">assert_raise</span>( <span class="ruby-constant">TypeError</span> ) {<span class="ruby-constant">Matriz_densa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">-2</span>,<span class="ruby-value">2</span>)}
+  <span class="ruby-identifier">assert_raise</span>( <span class="ruby-constant">TypeError</span> ) {<span class="ruby-constant">Matriz_dispersa</span>.<span class="ruby-identifier">new</span>(<span class="ruby-value">2</span>,<span class="ruby-value">-2</span>)}
+  <span class="ruby-identifier">assert_equal</span>(<span class="ruby-keyword">true</span>, <span class="ruby-ivar">@m3</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Matriz_dispersa</span>))
+  <span class="ruby-identifier">assert_kind_of</span>(<span class="ruby-constant">Matriz_densa</span>,<span class="ruby-ivar">@m1</span>)
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- test_typecheck-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- test_typecheck-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+
