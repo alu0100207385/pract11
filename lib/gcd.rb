@@ -1,4 +1,4 @@
-def gcd(u,v)	#gcd = MCD = max. común divisor
+def gcd(u,v)	#Calcula el maximo comun divisor entre dos numeros
   u, v = u.abs, v.abs
   while (v != 0)
     u, v = v, u % v
@@ -6,9 +6,8 @@ def gcd(u,v)	#gcd = MCD = max. común divisor
   u
 end
 
-def mcm (a, b)	#mcm = MCM = mín. común múltiplo
+def mcm (a, b)	#Calcula el minimo comun multiplo entre dos numeros
  (a*b)/gcd(a,b)
 end
 
-# puts "MCD = #{gcd(ARGV[0].to_i,ARGV[1].to_i)}"
-# puts "MCM = #{mcm(ARGV[0].to_i,ARGV[1].to_i)}"
+

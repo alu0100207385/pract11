@@ -3,7 +3,7 @@ require "./lib/gcd.rb"
 class NumerosRacionales
   attr_reader :a, :b
   
-  def initialize (a, b) # Crea un numero racional con numerador a y denominador b
+  def initialize (a, b)
     raise ZeroDivisionError, "Denominador igual a cero" if (b==0)
     if (a<0) and (b<0) #si los dos son negativos => nos queda positivo
       a,b= -a,-b
@@ -12,15 +12,15 @@ class NumerosRacionales
     @a,@b = a/simplifica,b/simplifica
   end
   
-  def num() # Devuelve el valor del numerador
+  def num()
     @a
   end
 
-  def denom()# Devuelve el valor del denominador
+  def denom()
     @b
   end
   
-  def to_s # Muestra por pantalla el racional
+  def to_s
     if (@a == 0) #numerador = 0, racional = 0. El denominador lo controlamos en el constructor
       "0"
     elsif (@b==1)
@@ -30,18 +30,18 @@ class NumerosRacionales
     end
   end
   
-  def to_f # Pasa a flotante un numero racional
+  def to_f
     tmp=@a.to_f/@b.to_f
     return tmp
   end
   
   
-  def simplificar # Simplifica el numero racional
+  def simplificar
     simplifica = gcd(@a,@b)
     NumerosRacionales.new(@a/simplifica,@b/simplifica)
   end
   
-  def +(other) # Calcula la suma de racionales o racionales con enteros
+  def +(other) 					#para sumar dos nums racionales...
     if (other.is_a?(Integer))
 #       other=self.coerce(other)
       other=NumerosRacionales.new(other,1)
@@ -56,7 +56,7 @@ class NumerosRacionales
     NumerosRacionales.new(num/simplifica,deno/simplifica)
   end
 
-  def -(other)	# Calcula la resta de racionales o racionales con enteros
+  def -(other)					#para restar dos nums racionales...
     if (other.is_a?(Numeric))
       other=self.coerce(other)
       other=other[0]
@@ -71,7 +71,7 @@ class NumerosRacionales
     NumerosRacionales.new(num/simplifica,deno/simplifica)
   end
   
-  def *(other)	# Calcula la multiplicaciones de dos racionales
+  def *(other)		#multiplicacion: multiplicamos numerador con numerador y denominador con denominador
     if (other.is_a?(Numeric))
       other=self.coerce(other)
       other=other[0]
@@ -86,7 +86,7 @@ class NumerosRacionales
     NumerosRacionales.new(num/simplifica,deno/simplifica)
   end
   
-   def /(other) # Calcula la division de dos racionales
+   def /(other) #división: multiplicamos en cruz: numerador de uno x denominador del otro y viceversa
      num = @a*other.b
      deno = @b*other.a
      simplifica = gcd(num,deno)			#averiguamos el valor para obtener el racional irreducible
@@ -97,20 +97,20 @@ class NumerosRacionales
      NumerosRacionales.new(num/simplifica,deno/simplifica)
    end
    
-   def %(other) # Halla el modulo de una fraccion
+   def %(other)
      tmp = (self/other).abs
      t = NumerosRacionales.new(1,1)
      tmp= t-tmp
      NumerosRacionales.new(tmp.num, tmp.denom)
    end
    
-   def coerce(other) # Hace una conversion de enteros a racionales
+   def coerce(other)
      if (other.is_a?(Integer))
        [NumerosRacionales.new(other.to_i,1),self]
      end
    end
    
-   def ==(other) # Compara si dos numeros racionales son iguales
+   def ==(other)
      if (self.to_f == other.to_f)
        true
      else
@@ -118,7 +118,7 @@ class NumerosRacionales
      end
    end
    
-  def <(other) # Compara si un numero racional es menor que otro
+  def <(other)
     if (self.to_f < other.to_f)
       true
     else
@@ -126,7 +126,7 @@ class NumerosRacionales
     end
   end
 
-  def <=(other) # Compara si un numero racional es menor o igual que otro
+  def <=(other)
     if (self.to_f <= other.to_f)
       true
     else
@@ -134,7 +134,7 @@ class NumerosRacionales
     end
   end  
   
-  def >(other) # Compara si un numero racional es mayor que otro
+  def >(other)
     if (self.to_f > other.to_f)
       true
     else
@@ -142,7 +142,7 @@ class NumerosRacionales
     end
   end
 
-  def >=(other) # Compara si un numero racional es mayor o igual que otro
+  def >=(other)
     if (self.to_f >= other.to_f)
       true
     else
@@ -150,22 +150,22 @@ class NumerosRacionales
     end
   end
   
-   def <=>(other) # Compara si un numero racional distinto otro
+   def <=>(other)
      self.to_f <=> other.to_f
    end
   
-   def abs # Calcula el valor absoluto de un racional
+   def abs
      n, d = @a.abs, @b.abs
      NumerosRacionales.new(n,d)
    end
    
-   def reciprocal # Calcula el inverso de un racional
+   def reciprocal
      inv = NumerosRacionales.new(1,1)
      tmp = inv/self
      NumerosRacionales.new(tmp.num,tmp.denom)
    end
    
-   def -@ # Calcula el opuesto de un racional
+   def -@
        NumerosRacionales.new(-self.num,self.denom)
    end
    
