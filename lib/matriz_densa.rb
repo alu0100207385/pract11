@@ -218,4 +218,16 @@ class Matriz_densa < Matriz
     r
   end
   
+  def encontrar
+    @fil.times do |i|
+      @col.times do |j|
+	valor=mat[i][j]
+	if yield(valor)
+	  return i,j
+	end
+      end
+    end
+    return nil #No supera el numero
+  end
+  
 end
