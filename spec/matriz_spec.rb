@@ -262,4 +262,10 @@ describe Matriz do
     
   end
   
+  describe "# Modificaciones en el laboratorio: "do
+    it "- Implementamos la funcion encontrar (usando yield)" do
+      (@m9.encontrar{|e| e*e>=16}).should eq([1,0])
+    end
+  end
+  
 end
