@@ -264,6 +264,8 @@ describe Matriz do
   
   describe "# Modificaciones en el laboratorio: "do
     it "- Implementamos la funcion encontrar (usando yield)" do
+      @m9=Matriz_densa.new(3,3)
+      @m9.llenar([[1,2,3],[4,5,6],[7,8,9]])
       (@m9.encontrar{|e| e*e>=16}).should eq([1,0])
     end
   end
